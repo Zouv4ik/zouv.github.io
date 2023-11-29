@@ -65,3 +65,9 @@ li {
 .nowrap {
     white-space: nowrap;
 }
+
+.closebutton {
+    position: absolute;
+    top: 0.5px;
+    right: 0.5px;
+}
