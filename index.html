@@ -25,13 +25,14 @@
     <div class="about animated">Меню: </div>
     <ol class="list animated nowrap">
         <li>
-            <button onclick="aboutMe.showModal( )">Обо мне</button>
+            <button onclick="aboutMe.showModal()">Обо мне</button>
         </li>
         <li>
-            <button onclick="projects.showModal( )">Мои проекты</button>
+            <button onclick="projects.showModal()">Мои проекты</button>
         </li>
     </ol>
     <dialog id="aboutMe">
+        <button class="closebutton" onclick="aboutMe.close()">X</button>
         <p>Меня зовут Резников Игорь, мне 15 лет, я из города Мелитополь и я учусь на WEB-разработчика.</p>
         <p>
             Связаться со мной:
@@ -39,6 +40,7 @@
         </p>
     </dialog>
     <dialog id="projects">
+        <button class="closebutton" onclick="projects.close()">X</button>
         <div>
             <a href="https://modrinth.com/mod/zmorecarrot">Z More Carrots</a>
             <p>Модификация для игры Minecraft добавляющая разнообразные виды морковок.</p>
