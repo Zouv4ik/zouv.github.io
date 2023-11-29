@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cousine:ital,wght@1,700&family=JetBrains+Mono:wght@100&family=Jost:ital,wght@1,500&family=Montserrat:ital,wght@1,300&family=Oswald&family=PT+Sans:wght@700&family=Pixelify+Sans&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
+</head>
+<body>
+    <div class="title">
+        <pre>
+ ######                                                             ##   ##                                 
+ ##   ##                                                            ##  ###                                 
+ ##   ##  #####   #####  ##   ## ##   ## ##   ##  #####  #####      ##  ###  #####   #####  ######  ##      
+ ######  ##   ## ##   ## ##   ## ##  ### ##  ##  ##   ## ##  ##     ## # ##      ## ##   ## ##   ## ##      
+ ##      ######     ###  ####### ## # ## #####   ##   ## ######     ###  ##  #####  ##   ## ######  ######  
+ ##      ##      ##   ## ##   ## ###  ## ##  ##  ##   ## ##   ##    ##   ## ##      ##   ## ##      ##   ## 
+ ##       #####   #####  ##   ## ##   ## ##   ##  #####  ######     ##   ##  ######  #####  ##      ######  
+                                                                                                  
+        </pre>
+    </div>
+    <div class="about animated">Меню: </div>
+    <ol class="list animated nowrap">
+        <li>
+            <button onclick="aboutMe.showModal( )">Обо мне</button>
+        </li>
+        <li>
+            <button onclick="projects.showModal( )">Мои проекты</button>
+        </li>
+    </ol>
+    <dialog id="aboutMe">
+        <p>Меня зовут Резников Игорь, мне 15 лет, я из города Мелитополь и я учусь на WEB-разработчика.</p>
+        <p>
+            Связаться со мной:
+            <a href="https://t.me/zouv4ik"><img src="assets/telegram-16.png"> Telegram</a>
+        </p>
+    </dialog>
+    <dialog id="projects">
+        <div>
+            <a href="https://modrinth.com/mod/zmorecarrot">Z More Carrots</a>
+            <p>Модификация для игры Minecraft добавляющая разнообразные виды морковок.</p>
+        </div>
+        <div>
+            <div>Nigger</div>
+            <p>[НАХОДИТСЯ В РАЗРАБОТКЕ]
+                Подобие социальной сети написанное на NodeJS с использованием express.js, MongoDB, JWT в бекэнде, а также Alpine.js и шалбонизатора EJS в фронтэнде.
+            </p>
+        </div>
+    </dialog>
+</body>
+</html>
